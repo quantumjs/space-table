@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-rm -rf node_modules/mission-list
-npm i mission-list
+rm -rf node_modules/space-table
+npm i space-table

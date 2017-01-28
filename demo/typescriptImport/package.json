@@ -6,9 +6,12 @@
     "html-webpack-plugin": "^2.24.1",
     "smart-terminal": "^0.1.2",
     "style-loader": "^0.13.1",
-    "ts-loader": "^1.0.0",
+    "ts-loader": "^2.0.0",
     "typescript": "^2.1.4",
     "webpack": "2.2.0",
     "webpack-build-notifier": "^0.1.13"
+  },
+  "dependencies": {
+    "space-table": "0.0.1"
   }
 }

@@ -1,7 +1,8 @@
-import {CONSTANTS} from "./constants";
-export default class MissionList {
+import {Row} from "./Row";
+import {Column} from "./Column";
+export class SpaceTable {
 
-  private rows = []
+  private rows: Row[] = []
   private hostElement: HTMLElement
 
 
@@ -10,33 +11,34 @@ export default class MissionList {
    * @param selector where the component will attach too
    * @param routes
    */
-  constructor(public selector: string) {
+  constructor(public selector: string, public columns: Column[]) {
     this.hostElement = <HTMLElement> document.querySelector(selector)
   }
 
   attach() {
   }
 
-  addRow(row) {
+  addRow(row: Row) {
     this.rows.push(row)
     this.render()
   }
 
-  addRows(rows) {
+  addRows(rows: Row[]) {
     this.rows = this.rows.concat(rows)
     this.render()
   }
 
   render() {
-    let rowsHTML = this.rows.map((row) => {
+    let rowsHTML = this.rows.map((row: Row) => {
       let tds: string = ""
-      for (var prop in row) {
-        tds += `<td>${row[prop]}</td>`
-      }
+      this.columns.forEach((column) => {
+        tds += `<td>${row.fields[column.field]}</td>`
+      })
       return `<tr>${tds}</tr>`
     }).join("")
 
     this.hostElement.innerHTML = `<table>${rowsHTML}</table>`
   }
 }
+
 

@@ -1,12 +1,12 @@
 {
-  "name": "mission-list",
+  "name": "space-table",
   "version": "0.0.1",
   "description": "",
-  "main": "build/mission-list.js",
-  "types": "build/src/MissionList.d.ts",
+  "main": "build/space-table.js",
+  "types": "build/src/SpaceTable.d.ts",
   "files": [
     "demo/browserImport/index.html",
-    "build/mission-list.js",
+    "build/space-table.js",
     "build/src/"
   ],
   "scripts": {
@@ -18,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QuantumInformation/mission-list.git"
+    "url": "git+https://github.com/QuantumInformation/space-table.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/QuantumInformation/mission-list/issues"
+    "url": "https://github.com/QuantumInformation/space-table/issues"
   },
-  "homepage": "https://github.com/QuantumInformation/mission-list#readme",
+  "homepage": "https://github.com/QuantumInformation/space-table#readme",
   "devDependencies": {
     "css-variables": "^0.1.4",
     "html-webpack-plugin": "^2.24.1",

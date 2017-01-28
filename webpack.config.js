@@ -11,12 +11,12 @@ const PATHS = {
 module.exports = {
 
   entry: {
-    "mission-list": PATHS.src + '/MissionList.ts'
+    "space-table": PATHS.src + '/SpaceTable.ts'
   },
   output: {
     path: PATHS.build,
     filename: '[name].js',
-    library: 'MissionList',
+    library: 'SpaceTable',
     libraryTarget: 'umd'
   },
   devtool: "source-map",
