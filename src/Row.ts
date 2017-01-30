@@ -11,7 +11,7 @@ export class Row {
   }
 
 
-  /*  addRow(row) {
+  /*  push(row) {
    this.rows.push(row)
    this.render()
    }

@@ -1,3 +1,4 @@
 export {Column} from "./Column";
 export {Row} from "./Row";
-export default {SpaceTable} from "./SpaceTable";
+import {SpaceTable} from "./SpaceTable";
+export default SpaceTable

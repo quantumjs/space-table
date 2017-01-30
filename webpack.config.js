@@ -11,7 +11,7 @@ const PATHS = {
 module.exports = {
 
   entry: {
-    "space-table": PATHS.src + '/SpaceTable.ts'
+    "space-table": PATHS.src + '/index.ts'
   },
   output: {
     path: PATHS.build,

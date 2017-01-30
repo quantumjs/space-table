@@ -18,13 +18,17 @@ export class SpaceTable {
   attach() {
   }
 
-  addRow(row: Row) {
+  push(row: Row) {
     this.rows.push(row)
     this.render()
   }
 
   addRows(rows: Row[]) {
     this.rows = this.rows.concat(rows)
+    this.render()
+  }
+  pop() {
+    this.rows.pop()
     this.render()
   }
 

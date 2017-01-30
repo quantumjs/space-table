@@ -1,6 +1,11 @@
 import SpaceTable from "space-table";
 import {Row} from "../../src/Row";
-let spaceTable = new SpaceTable(".space-table")
+import {Column} from "../../src/Column";
+var columns:Column[] = [
+  new Column("command"),
+  new Column("output"),
+]
+let spaceTable = new SpaceTable(".space-table",columns)
 let rows = [
   new Row(1, {
     foo: 2,

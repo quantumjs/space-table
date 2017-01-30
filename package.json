@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "build/space-table.js",
-  "types": "build/src/SpaceTable.d.ts",
+  "types": "build/src/index.d.ts",
   "files": [
     "demo/browserImport/index.html",
     "build/space-table.js",

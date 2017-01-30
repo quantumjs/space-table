@@ -5,7 +5,7 @@ export class Column {
   }
 
   setFormatFunction(formatFunction: (item: any) => string) {
-    this.formatFunction(formatFunction)
+    this.formatFunction = formatFunction
   }
 }
 
